@@ -63,21 +63,140 @@ class HomeScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    Text(' تهران📍',
-                    style: TextStyle(
-                      fontFamily: 'dana',
-                      fontSize: 18,
-                      color: Colors.white,
-                      fontWeight: FontWeight.w300
-                    ),),
+                    Text(
+                      ' تهران📍',
+                      style: TextStyle(
+                          fontFamily: 'dana',
+                          fontSize: 18,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w300),
+                    ),
                     const SizedBox(height: 8),
-                    Text('صبح بخیر ',
-                    style: TextStyle(
-                      fontFamily: 'dana',
-                      fontSize: 32,
-                      color: Colors.white,
-                      fontWeight: FontWeight.w800
-                    ),),
+                    Text(
+                      'صبح بخیر ',
+                      style: TextStyle(
+                          fontFamily: 'dana',
+                          fontSize: 32,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w800),
+                    ),
+                    Image.asset('assets/images/1.png'),
+                    Center(
+                      child: Text(
+                        '21° C',
+                        style: TextStyle(
+                            fontFamily: 'dana',
+                            color: Colors.white,
+                            fontSize: 54,
+                            fontWeight: FontWeight.w800),
+                      ),
+                    ),
+                    Center(
+                      child: Text(
+                        'بارانی',
+                        style: TextStyle(
+                          fontFamily: 'dana',
+                          fontSize: 32,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Center(
+                      child: Text(
+                        'جمعه 21 مرداد _ 7:30',
+                        style: TextStyle(
+                          fontFamily: 'dana',
+                          fontSize: 16,
+                          fontWeight: FontWeight.w100,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            SizedBox(
+                              width: 5,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'غروب',
+                                  style: TextStyle(
+                                      fontFamily: 'dana',
+                                      fontSize: 10,
+                                      fontWeight: FontWeight.normal,
+                                      color: const Color.fromARGB(
+                                          255, 176, 173, 173)),
+                                ),
+                                SizedBox(height: 3),
+                                Text(
+                                  '18:46',
+                                  style: TextStyle(
+                                      fontFamily: 'dana',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w100,
+                                      color: Colors.white),
+                                ),
+                              ],
+                            ),
+                            Image.asset(
+                              'assets/images/12.png',
+                              scale: 8,
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            SizedBox(
+                              width: 5,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'طلوع',
+                                  style: TextStyle(
+                                      fontFamily: 'dana',
+                                      fontSize: 10,
+                                      fontWeight: FontWeight.normal,
+                                      color: const Color.fromARGB(
+                                          255, 176, 173, 173)),
+                                ),
+                                SizedBox(height: 3),
+                                Text(
+                                  '6:32',
+                                  style: TextStyle(
+                                      fontFamily: 'dana',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w100,
+                                      color: Colors.white),
+                                ),
+                              ],
+                            ),
+                            Image.asset(
+                              'assets/images/11.png',
+                              scale: 8,
+                            ),
+                          ],
+                        ),
+                        Padding(
+                          padding: EdgeInsets.symmetric(vertical: 5.0),
+                          child: Divider(
+                            color: Colors.grey,
+                          ),)
+                      ],
+                    )
                   ],
                 ),
               )
