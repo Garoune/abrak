@@ -69,18 +69,17 @@ class HomeScreen extends StatelessWidget {
                           fontFamily: 'dana',
                           fontSize: 18,
                           color: Colors.white,
-                          fontWeight: FontWeight.w300),
+                          fontWeight: FontWeight.w100),
                     ),
-                    const SizedBox(height: 8),
                     Text(
                       'صبح بخیر ',
                       style: TextStyle(
                           fontFamily: 'dana',
                           fontSize: 32,
                           color: Colors.white,
-                          fontWeight: FontWeight.w800),
+                          fontWeight: FontWeight.w700),
                     ),
-                    Image.asset('assets/images/1.png'),
+                    Image.asset('assets/images/2.png'),
                     Center(
                       child: Text(
                         '21° C',
@@ -96,7 +95,7 @@ class HomeScreen extends StatelessWidget {
                         'بارانی',
                         style: TextStyle(
                           fontFamily: 'dana',
-                          fontSize: 32,
+                          fontSize: 34,
                           fontWeight: FontWeight.w800,
                           color: Colors.white,
                         ),
@@ -111,8 +110,7 @@ class HomeScreen extends StatelessWidget {
                         style: TextStyle(
                           fontFamily: 'dana',
                           fontSize: 16,
-                          fontWeight: FontWeight.w100,
-                          color: Colors.white,
+                          color: const Color.fromARGB(255, 179, 175, 175),
                         ),
                       ),
                     ),
@@ -128,7 +126,7 @@ class HomeScreen extends StatelessWidget {
                               width: 5,
                             ),
                             Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
                                   'غروب',
@@ -162,7 +160,7 @@ class HomeScreen extends StatelessWidget {
                               width: 5,
                             ),
                             Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
                                   'طلوع',
@@ -190,13 +188,88 @@ class HomeScreen extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Padding(
-                          padding: EdgeInsets.symmetric(vertical: 5.0),
-                          child: Divider(
-                            color: Colors.grey,
-                          ),)
                       ],
-                    )
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(vertical: 5.0),
+                      child: Divider(
+                        color: const Color.fromARGB(255, 29, 29, 29),
+                      ),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            SizedBox(
+                              width: 5,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'کمترین دما',
+                                  style: TextStyle(
+                                      fontFamily: 'dana',
+                                      fontSize: 10,
+                                      fontWeight: FontWeight.normal,
+                                      color: const Color.fromARGB(
+                                          255, 176, 173, 173)),
+                                ),
+                                SizedBox(height: 3),
+                                Text(
+                                  '8°C',
+                                  style: TextStyle(
+                                      fontFamily: 'dana',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w100,
+                                      color: Colors.white),
+                                ),
+                              ],
+                            ),
+                            Image.asset(
+                              'assets/images/14.png',
+                              scale: 8,
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            SizedBox(
+                              width: 5,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'بیشترین دما',
+                                  style: TextStyle(
+                                      fontFamily: 'dana',
+                                      fontSize: 10,
+                                      fontWeight: FontWeight.normal,
+                                      color: const Color.fromARGB(
+                                          255, 176, 173, 173)),
+                                ),
+                                SizedBox(height: 3),
+                                Text(
+                                  '14°C',
+                                  style: TextStyle(
+                                      fontFamily: 'dana',
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w100,
+                                      color: Colors.white),
+                                ),
+                              ],
+                            ),
+                            Image.asset(
+                              'assets/images/13.png',
+                              scale: 8,
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    
                   ],
                 ),
               )
